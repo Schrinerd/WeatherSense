@@ -9,7 +9,7 @@ scrape_temp_path = output_loc + r'/scraped_temps.csv'
 
 dfmtr = mdates.DateFormatter('%-m/%-d %-I%p')
 
-def plot_temps():
+def plot_temps(show=False):
     temp_df = pd.read_csv(inside_temp_path, header=0,names=['Time','Temp']).tail(1000)
     temp_df['TimeF'] = pd.to_datetime(temp_df['Time'],unit='s')\
         .dt.tz_localize("UTC")\
@@ -29,8 +29,10 @@ def plot_temps():
     ax.set_xlabel('Time')
     ax.set_ylabel('Temperature, $^\circ$F')
     ax.set_title("Apartment and Outside Temperature")
-    # plt.show()
-    plt.savefig(figsaveloc)
+    if show==True:
+        plt.show()
+    else:
+        plt.savefig(figsaveloc)
 
 
 plot_temps()
