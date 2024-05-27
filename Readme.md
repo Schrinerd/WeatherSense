@@ -10,7 +10,7 @@ The image is viewed using the RPi as a local webserver.
 ### Prerequisites:
 -Rpi w/ lighttpd (as in, one running Pi-Hole)
 
-#### Add another folder to /var/www/html and set its permissions
+### Add another folder to /var/www/html and set its permissions
 from https://medium.com/@haquangvu/how-do-i-give-myself-access-to-var-www-to-create-and-edit-files-and-folders-in-it-without-sudo-ac93ca943a26
 sudo mkdir /var/www/html/pitemp
 sudo chown $USER:www-data /var/www/html/pitemp
