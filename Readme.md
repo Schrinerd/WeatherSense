@@ -12,9 +12,14 @@ The image is viewed using the RPi as a local webserver.
 
 ### Add another folder to /var/www/html and set its permissions
 from https://medium.com/@haquangvu/how-do-i-give-myself-access-to-var-www-to-create-and-edit-files-and-folders-in-it-without-sudo-ac93ca943a26
+
 sudo mkdir /var/www/html/pitemp
+
 sudo chown $USER:www-data /var/www/html/pitemp
+
 sudo chmod g+s /var/www/html/pitemp
+
 sudo chmod o-rwx /var/www/html/pitemp
+
 
 Put an "index.html" file in /var/www/pitemp
