@@ -15,7 +15,6 @@ from https://www.circuitbasics.com/raspberry-pi-ds18b20-temperature-sensor-tutor
 
 ### Install packages   
 sudo apt install python3-pandas  
-sudo apt install python3-matplotlib
 
 ### Add another folder to /var/www/html and set its permissions
 from https://medium.com/@haquangvu/how-do-i-give-myself-access-to-var-www-to-create-and-edit-files-and-folders-in-it-without-sudo-ac93ca943a26  
@@ -27,8 +26,9 @@ sudo chmod o-rwx /var/www/html/pitemp
 ### Create the html file
 Move index.html to /var/www/pitemp  
 
+
 ### Create the cron job to scrape every so often
-see text in cron.txt
+*/3 * * * * sudo python /path/to/file.py
 
 
 
