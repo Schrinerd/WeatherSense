@@ -10,10 +10,10 @@ The image is viewed using the RPi as a local webserver.
 ### Prerequisites:
 -Rpi w/ lighttpd (as in, one running Pi-Hole)
 
-Turn on the One Wire interface
+Turn on the One Wire interface  
 from https://www.circuitbasics.com/raspberry-pi-ds18b20-temperature-sensor-tutorial/
 
-Install packages
+Install packages   
 sudo apt install python3-pandas
 sudo apt install python3-matplotlib
 
