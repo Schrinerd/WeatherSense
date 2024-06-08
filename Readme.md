@@ -7,13 +7,13 @@ The image is viewed using the RPi as a local webserver.
 
 -DJS, 2022
 
-### Prerequisites:
--Rpi w/ lighttpd (as in, one running Pi-Hole)
+## Prerequisites:
+Rpi w/ lighttpd (as in, one running Pi-Hole)
 
-Turn on the One Wire interface  
+### Turn on the One Wire interface  
 from https://www.circuitbasics.com/raspberry-pi-ds18b20-temperature-sensor-tutorial/
 
-Install packages   
+### Install packages   
 sudo apt install python3-pandas  
 sudo apt install python3-matplotlib
 
@@ -24,5 +24,11 @@ sudo chown $USER:www-data /var/www/html/pitemp
 sudo chmod g+s /var/www/html/pitemp  
 sudo chmod o-rwx /var/www/html/pitemp  
 
+### Create the html file
+Move index.html to /var/www/pitemp  
 
-Put an "index.html" file in /var/www/pitemp
+### Create the cron job to scrape every so often
+see text in cron.txt
+
+
+
