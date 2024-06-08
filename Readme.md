@@ -10,6 +10,13 @@ The image is viewed using the RPi as a local webserver.
 ### Prerequisites:
 -Rpi w/ lighttpd (as in, one running Pi-Hole)
 
+Turn on the One Wire interface
+from https://www.circuitbasics.com/raspberry-pi-ds18b20-temperature-sensor-tutorial/
+
+Install packages
+sudo apt install python3-pandas
+sudo apt install python3-matplotlib
+
 ### Add another folder to /var/www/html and set its permissions
 from https://medium.com/@haquangvu/how-do-i-give-myself-access-to-var-www-to-create-and-edit-files-and-folders-in-it-without-sudo-ac93ca943a26
 
